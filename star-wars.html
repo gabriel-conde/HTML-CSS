@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Photo App</title>
+</head>
+<body>
+    <main>
+        <h1>Star Wars Photo App</h1>
+        <section>
+          <h2>Star Wars Photos</h2>
+          <p>See more <a target="_blank" href="https://unsplash.com/s/photos/starwars">Star Wars photos</a> here.</p>
+          <a target="_blank" href="https://youtu.be/WhvlDYsAVM0?si=MEZfWpZxw-ruOV6j"><img src="./assets/baby-yoda.jpg" alt="Baby Yoda in a forest." width="400" height="300"></a>
+        </section>
+        <section>
+          <h2>Sith and Jedi Lists</h2>
+          <h3>Sith and Jedi from the Prequel Trilogy:</h3>
+          <ul>
+            <li>Darth Maul</li>
+            <li>Count Dooku</li>
+            <li>Qui-Gon Jinn</li>
+          </ul>
+          <figure>
+            <img src="./assets/sith.jpg" alt="A sith with a red lightsaber in a cave." width="300" height="400">
+            <figcaption>The terms "Sith" and "Jedi" refer to two opposing factions in the Star Wars universe. The Prequel Trilogy, consisting of Episode I: "The Phantom Menace" (1999), Episode II: "Attack of the Clones" (2002), and Episode III: "Revenge of the Sith" (2005), provides significant insights into the rise of the Sith and the fall of the Jedi.</figcaption>  
+          </figure>
+          <h3>Top 3 Weapons in the Star Wars universe:</h3>
+          <ol>
+            <li>lightsaber</li>
+            <li>beskar spear</li>
+            <li>blaster rifle</li>
+          </ol>
+          <figure>
+            <img src="./assets/stormtrooper.jpg" alt="A stormtrooper with a blaster rifle." width="300" height="400">
+            <figcaption>Stormtroopers have the <strong>worst</strong> aim.</figcaption>  
+          </figure>
+        </section>
+        <section>
+          <h2>Star Wars Form</h2>
+          <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <fieldset>
+              <legend>Do you prefer the dark side or the light?</legend>
+              <label><input id="dark" type="radio" name="dark-light" value="dark" checked> Dark Side</label>
+              <label><input id="light" type="radio" name="dark-light" value="light"> Light Side</label>
+            </fieldset>
+            <fieldset>
+              <legend>What are your favorite lightsaber colors?</legend>
+              <input id="red" type="checkbox" name="color" value="red" checked> <label for="red">Red</label>
+              <input id="blue" type="checkbox" name="color" value="blue"> <label for="blue">Blue</label>
+              <input id="green" type="checkbox" name="color" value="green"> <label for="green">Green</label>
+            </fieldset>
+            <input type="text" name="starwarsphotourl" placeholder="star wars photo URL" required>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+    </main>
+</body>
+</html>
