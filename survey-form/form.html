@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Survey Form</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<h1 id="title">Star Wars Survey</h1>
+<p id="description">Thank you for taking your time to provide important data</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <label for="email" id="email-label">Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <label for="number" id="number-label">Age</label>
+  <input type="number" id="number" name="number" placeholder="Age" min="5" max="99">
+  <label for="dropdown">Which option best describes your current familiarity with Star Wars?</label>
+  <select id="dropdown" name="dropdown">
+    <option value="" selected disabled>Choose an option</option>
+    <option value="notFamiliar">I have never watched it</option>
+    <option value="somewhatFamiliar">Somewhat Familiar</option>
+    <option value="moderatelyFamiliar">Moderately Familiar</option>
+    <option value="veryFamiliar">Very Familiar</option>
+    <option value="extremelyFamiliar">I'm a super fan!</option>
+  </select>
+  <label id="radio-label">Would you recommend Star Wars to a friend?</label>
+  <label class="option">
+  <input type="radio" name="option" value="option1" checked> Definitely</label>
+  <label class="option">
+  <input type="radio" name="option" value="option2"> Maybe</label>
+  <label class="option">
+  <input type="radio" name="option" value="option2"> Not sure</label>
+  <label id="lightsaber-label">Which lightsaber color is your favorite?</label>
+  <label class="option">
+  <input type="checkbox" name="option" value="red" checked> Red</label>
+  <label class="option">
+  <input type="checkbox" name="option" value="blue"> Blue</label>
+  <label class="option">
+  <input type="checkbox" name="option" value="green"> Green</label>
+  <label id="text-label">Any comments or suggestions?</label>
+  <textarea rows="6" cols="50" placeholder="Enter your comment here..."></textarea>
+  <button type="submit" id="submit">Submit</button>
+</form>
